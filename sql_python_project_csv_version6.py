@@ -5,7 +5,7 @@ import time
 import random
 
 # CSV file path
-csv_path = r"C:/Users/Shiwang Rao/OneDrive\Desktop/MYSQL/customer_data_unique.csv"
+csv_path = r"customer_data_unique.csv"
 
 # Database connection
 db = mysql.connector.connect(host='localhost', user='root', password='krmg1234', database='HOTEL_MANAGEMENT')
