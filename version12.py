@@ -72,7 +72,6 @@ def speciality():
     print('''The Taj Mahal Palace, Mumbai makes a wonderful starting point from which to discover the charms that bring people from around the globe flocking to Mumbai city, India's commercial and entertainment capital. ...''')
     
     descinfo = mycursor.fetchall()
-    
     for (Rooms, Type, Charges, Features, Occupancy) in descinfo:
         print("We have Rooms", Rooms, "of type", Type, ",it has", Features, "and occupancy of", Occupancy, "persons.")
     
@@ -81,17 +80,11 @@ def speciality():
     print("SERVICES:")
     
     print('''For the disabled, Breakfast, Restaurant, Adsl wi-fi internet, Fax, Newspapers, Transfer, Tourist information, Small animals welcome, Private parking,Guarded garage, 24h reception, 24h bar, Beaches at 500 m, Shuttle bus stop for the airport only 10 minutes away.''')
-    
     print()
-    
     print("FACILITIES:")
-    
     print("ReceptionHall, Bar, Pool 10.00 a.m. – 6.00 p.m.")
-    
     print("BOOKING:")
-    
     print("Excursions, Guided tours, Private parties")
-    
     print()
     
     mycursor.close()
@@ -255,8 +248,7 @@ def inputdata():
 
     Smoking = input("Would you like Smoking or Non-Smoking room? (y/n): ")
     if Smoking.lower() == 'y' or 'Y':
-        s = s + 2000 * n
-        print("Smoking room selected. An additional charge of Rs 2000 per night has been added.")
+        print("Smoking room selected.")
     else:
         print("Non-Smoking room selected.")
 
