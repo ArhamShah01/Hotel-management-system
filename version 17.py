@@ -195,8 +195,8 @@ def inputdata():
 
 
     print("\n__________________________________________________")
-    purpose = input("Enter purpose of stay (Business/Leisure), input (B/L): ")
-    if purpose == 'B' or 'b':
+    purpose = input("Enter purpose of stay (Business/Leisure), input (B/L): ").lower()
+    if purpose == 'b':
         print("As a business traveler, you might be interested in our conference facilities and high-speed internet access.")
         print("You may avail conference hall services at a discounted rate.")
         print("\n For Claiming Business expenses: \n GST invoice No.: 1234567890")
@@ -655,4 +655,5 @@ if __name__ == "__main__":
             quit()
         
         else:
+
             print("Wrong Choice")
