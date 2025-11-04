@@ -6,7 +6,7 @@ import random
 from datetime import datetime
 
 # CSV file path
-csv_path = r"C:/Users/arham/Downloads/python sql project/customer_data_v2.csv"
+csv_path = r"customer_data_v2.csv"
 
 # Database connection
 db = mysql.connector.connect(host='localhost', user='root', password='krmg1234', database='HOTEL_MANAGEMENT')
@@ -655,4 +655,5 @@ if __name__ == "__main__":
             quit()
         
         else:
+
             print("Wrong Choice")
