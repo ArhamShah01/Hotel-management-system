@@ -206,11 +206,9 @@ def inputdata():
         print("As a business traveler, you might be interested in our conference facilities and high-speed internet access.")
         print("You may avail conference hall services at a discounted rate.")
         print("\n For Claiming Business expenses: \n GST invoice No.: 1234567890")
-    elif purpose == l:
+    else:
         Cpurpose = "L"
         print("As a leisure traveler, you might enjoy our recreational amenities and dining options.")
-    else:
-        print("Invalid Choice")
     print("\n__________________________________________________")
 
     empty_rooms=get_empty_rooms()
@@ -706,3 +704,4 @@ if __name__ == "__main__":
         else:
 
             print("Wrong Choice")
+
